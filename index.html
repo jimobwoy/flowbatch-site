@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flow Batch Generator: run a list of prompts in Google Flow</title>
+<meta name="description" content="Flow Batch Generator is a Chrome extension that runs a list of Text to Image prompts on Google Flow one after another and saves each picture with the file name you choose.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="index.html"><img src="icon.png" alt="">Flow Batch Generator</a>
+  <nav><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">Questions</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main>
+<section class="hero" style="border-top:0"><div class="wrap">
+  <div>
+    <h1>Paste a list of prompts. Come back to a folder of pictures.</h1>
+    <p class="lead">Flow Batch Generator is a Chrome extension that sends your Text to Image prompts to Google Flow one after another, then saves every picture with the file name you picked.</p>
+    <a class="btn" href="#pricing">See pricing</a><a class="btn ghost" href="#how">How it works</a>
+    <p class="note">Free for 3 days. No card needed to start. Coming soon to the Chrome Web Store.</p>
+  </div>
+  <div class="queue" aria-label="Example of a prompt list turning into saved files">
+    <h2>Your queue</h2>
+    <div class="row done"><span>A lighthouse at dawn, soft fog, film grain</span><span class="file">scene-001.jpg</span></div>
+    <div class="row done"><span>A paper boat crossing a puddle, macro</span><span class="file">scene-002.jpg</span></div>
+    <div class="row done"><span>Neon market street after rain, wide shot</span><span class="file">scene-003.jpg</span></div>
+    <div class="row"><span>Old library with floating lanterns</span><span class="file">scene-004.jpg</span></div>
+  </div>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <h2 class="s">How it works</h2>
+  <p class="sub">Four steps, all inside the side panel next to your Flow tab.</p>
+  <div class="grid">
+    <div class="item"><h3>1. Paste your prompts</h3><p>Put one prompt in each block, with a blank line between blocks.</p></div>
+    <div class="item"><h3>2. Pick your settings</h3><p>Choose the image ratio, model, how many pictures per prompt, and how fast to go.</p></div>
+    <div class="item"><h3>3. Press Start</h3><p>The extension fills in each prompt on Flow, presses Generate and waits for the result.</p></div>
+    <div class="item"><h3>4. Collect your files</h3><p>Pictures download into a folder with your own prefix and numbers, like scene-001.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2 class="s">What you get</h2>
+  <p class="sub">Built for people who make many images at a time.</p>
+  <div class="grid">
+    <div class="item"><h3>Your own file names</h3><p>Set a prefix and a starting number. Files are saved in a folder you choose inside Downloads.</p></div>
+    <div class="item"><h3>Pause and resume</h3><p>Stop any time and carry on later. If the browser closes, your queue is still there.</p></div>
+    <div class="item"><h3>Automatic retry</h3><p>If a prompt fails, the extension can try it again, and lists the failed ones so you can redo them.</p></div>
+    <div class="item"><h3>Speed choices</h3><p>Go one at a time, or send several prompts at once. Faster speeds may trigger Flow's own limits, so the panel warns you.</p></div>
+    <div class="item"><h3>Reference pictures</h3><p>Attach start and end frames, ingredients, or named characters to your prompts.</p></div>
+    <div class="item"><h3>Stays in your browser</h3><p>Your prompts and pictures stay on your computer. See the <a href="privacy.html">privacy policy</a>.</p></div>
+  </div>
+</div></section>
+
+<section id="pricing"><div class="wrap">
+  <h2 class="s">Pricing</h2>
+  <p class="sub">One plan, billed monthly in naira. Cancel any time by not renewing.</p>
+  <div class="price">
+    <div class="plan">
+      <div>Monthly</div>
+      <div class="amt">₦4,500 <small>per month</small></div>
+      <ul>
+        <li>3-day free trial on every new account</li>
+        <li>Everything in the extension included</li>
+        <li>Pay by card or bank through Paystack</li>
+        <li>Renew when you want; no hidden charges</li>
+      </ul>
+      <a class="btn" href="#contact">Ask a question first</a>
+    </div>
+    <div>
+      <h3 style="margin-top:0">How payment works</h3>
+      <p class="sub" style="margin-bottom:12px">Payments are handled by Paystack. We never see or store your card details. After you pay, your account unlocks for 30 days. If you renew early, the new days are added on top of the days you have left.</p>
+      <p class="sub">Read the <a href="terms.html">terms and refund policy</a> before you pay.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <h2 class="s">Questions</h2>
+  <details><summary>Is this made by Google?</summary><p>No. Flow Batch Generator is an independent tool and is not made, endorsed or supported by Google. Google Flow is a product of Google LLC.</p></details>
+  <details><summary>Does it work with videos?</summary><p>Not yet. This version runs Text to Image prompts. Video modes are planned.</p></details>
+  <details><summary>Will Flow ever block me for going too fast?</summary><p>Flow can flag unusually fast use. The side panel offers slower speeds and warns you about the faster ones. Choose the speed you are comfortable with.</p></details>
+  <details><summary>Why does it ask for the "debugger" permission?</summary><p>Flow only accepts real mouse clicks on its Generate button. The permission lets the extension send that click on your Flow tab. It is only used on Flow pages.</p></details>
+  <details><summary>Where are my pictures saved?</summary><p>In your normal Downloads folder, inside a sub-folder whose name you choose.</p></details>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2 class="s">Contact</h2>
+  <p class="sub">Questions, problems or refund requests: write to <a href="mailto:jimoifeanyi1@gmail.com">jimoifeanyi1@gmail.com</a>. We reply within 2 working days.</p>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div>© 2026 Flow Batch Generator. Not affiliated with Google.</div>
+  <div style="margin-top:8px"><a href="privacy.html">Privacy policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms and refunds</a> &nbsp;·&nbsp; <a href="mailto:jimoifeanyi1@gmail.com">jimoifeanyi1@gmail.com</a></div>
+</div></footer>
+</body>
+</html>

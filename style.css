@@ -1,0 +1,50 @@
+:root{--ink:#1b1535;--muted:#5e5a73;--brand:#6c47ff;--brand-dark:#5233d6;--tint:#efeaff;--line:#e3def5;--bg:#ffffff}
+@media (prefers-color-scheme:dark){:root{--ink:#f1eeff;--muted:#b2acd0;--brand:#8f73ff;--brand-dark:#a78fff;--tint:#231c46;--line:#32295e;--bg:#130f26}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
+a{color:var(--brand)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--ink);text-decoration:none}
+.logo img{width:30px;height:30px;border-radius:7px}
+nav a{margin-left:22px;color:var(--muted);text-decoration:none;font-size:15px}
+nav a:hover{color:var(--ink)}
+.hero{padding:72px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+h1{font-size:clamp(2rem,4.6vw,3.2rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 18px}
+.lead{font-size:1.15rem;color:var(--muted);max-width:34em;margin:0 0 26px}
+.btn{display:inline-block;background:var(--brand);color:#fff;padding:13px 22px;border-radius:10px;text-decoration:none;font-weight:600}
+.btn:hover{background:var(--brand-dark)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);margin-left:10px}
+.note{font-size:14px;color:var(--muted);margin-top:14px}
+.queue{background:var(--tint);border:1px solid var(--line);border-radius:16px;padding:18px;font-size:14px}
+.queue h2{font-size:13px;margin:0 0 12px;color:var(--muted);font-weight:600}
+.row{display:grid;grid-template-columns:1fr auto;gap:12px;padding:10px 12px;background:var(--bg);border:1px solid var(--line);border-radius:10px;margin-bottom:8px;align-items:center}
+.row span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.file{font-family:Consolas,"Courier New",monospace;color:var(--brand);font-size:13px}
+.done{border-left:4px solid var(--brand)}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2.s{font-size:1.7rem;letter-spacing:-.01em;margin:0 0 10px}
+.sub{color:var(--muted);margin:0 0 30px;max-width:40em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.item h3{margin:0 0 6px;font-size:1.05rem}
+.item p{margin:0;color:var(--muted);font-size:16px}
+.price{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+.plan{border:2px solid var(--brand);border-radius:16px;padding:28px}
+.plan .amt{font-size:2.6rem;font-weight:800;letter-spacing:-.02em}
+.plan .amt small{font-size:1rem;font-weight:500;color:var(--muted)}
+.plan ul{padding-left:20px;margin:16px 0 22px;color:var(--muted)}
+details{border-bottom:1px solid var(--line);padding:14px 0}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--muted);margin:10px 0 0}
+footer{border-top:1px solid var(--line);padding:34px 0 50px;color:var(--muted);font-size:14.5px}
+footer a{color:var(--muted)}
+.doc{max-width:760px;padding:48px 22px 70px;margin:0 auto}
+.doc h1{font-size:2.1rem}
+.doc h2{font-size:1.25rem;margin:34px 0 8px}
+.doc p,.doc li{color:var(--muted)}
+.doc li{margin:4px 0}
+:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+@media (max-width:820px){.hero .wrap,.price{grid-template-columns:1fr}.hero{padding-top:44px}nav a{margin-left:14px}}
